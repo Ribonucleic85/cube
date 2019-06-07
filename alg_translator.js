@@ -53,8 +53,8 @@ trans = (alg, ax)=>{
     // edge move?
     if (ed.indexOf(cm) != -1) {
       cm = ed[edsh.indexOf(cm)]; // is edge move so transform it to next move in the sequence
-      cm += ccw? "'": ""; // if move was inverted change it back
-      ccw = !1; // restore ccw indicator to false
+      cm += ccw? "'": ""; // if move was ccw change it back
+      ccw = !1; // ccw indicator to false, no point in checking what it is, just do it
       continue;
     }
 
